@@ -17,7 +17,7 @@ namespace FinMan.Data
 
             if (String.IsNullOrEmpty(authorizationKey))
             {
-                authorizationKey = await Token.GetToken();
+                authorizationKey = await TokenManager.GetToken();
             }
             client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authorizationKey);
             client.DefaultRequestHeaders.Add("Accept", "application/json");

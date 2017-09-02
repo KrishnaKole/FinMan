@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using FinMan.Data;
 using Newtonsoft.Json;
 namespace FinMan.Data
 {
-    class Token
+    class TokenManager
     {
         const string Url = "https://dnbapistore.com/token";
         const string Key = "EwcuY9iHOmlRPjHBfAKbebhGEHwa";
@@ -19,14 +20,27 @@ namespace FinMan.Data
             var encodedText = Convert.ToBase64String(plainBytes);
 
             client.DefaultRequestHeaders.Add("Authorization", "Basic " + encodedText);
-            client.DefaultRequestHeaders.Add("Accept", "application/json");
-            client.DefaultRequestHeaders.Add("UserAgent", "USER_AGENT");
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue("en_US"));
+            var keyValues = new List<KeyValuePair<string, string>>();
+            keyValues.Add(new KeyValuePair<string, string>("grant_type", "client_credentials"));
 
+            var response = await client.PostAsync(Url, new FormUrlEncodedContent(keyValues));
+            var responseMessage = await response.Content.ReadAsStringAsync();
+            var token = JsonConvert.DeserializeObject<Token>(responseMessage);
 
-            //var response = await client.PostAsync(Url, new StringContent("grant_type=client_credentials"));
-            //return JsonConvert.DeserializeObject<string>(await response.Content.ReadAsStringAsync());
-            return "f5a7683e-f60e-3c18-9903-143f32bd02b3";
+            return token.access_token;
         }
     }
+
+
+    public class Token
+    {
+        public string access_token { get; set; }
+        public string scope { get; set; }
+        public string token_type { get; set; }
+        public int expires_in { get; set; }
+    }
+
 }
 
