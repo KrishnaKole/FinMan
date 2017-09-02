@@ -14,20 +14,22 @@ namespace FinMan
         readonly IList<Book> books = new ObservableCollection<Book>();
         readonly BookManager manager = new BookManager();
 
+        readonly AccountClient client = new AccountClient();
+        readonly IList<Account> accounts = new ObservableCollection<Account>();
+
         public MainPage()
         {
-            BindingContext = books;
+            BindingContext = accounts;
             InitializeComponent();
         }
 
         async void OnRefresh(object sender, EventArgs e)
         {
-            var bookCollection = await manager.GetAll();
+            var customer = await client.GetAll("24057788035");
 
-            foreach (Book book in bookCollection)
+            foreach (Account account in customer.accounts)
             {
-                if (books.All(b => b.ISBN != book.ISBN))
-                    books.Add(book);
+                accounts.Add(account);
             }
         }
 

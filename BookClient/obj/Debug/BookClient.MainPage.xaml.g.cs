@@ -11,7 +11,7 @@
 namespace FinMan {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\My Programming\\Hackathon\\XAM150-ex2-start\\BookClient\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\My Programming\\Hackathon\\FinMan\\BookClient\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

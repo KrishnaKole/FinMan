@@ -37,10 +37,12 @@
   <ItemGroup>
     <Compile Include="AddEditBookPage.cs" />
     <Compile Include="App.cs" />
-    <Compile Include="Data\Account.cs" />
+    <Compile Include="Data\CustomerAccount.cs" />
     <Compile Include="Data\AccountClient.cs" />
     <Compile Include="Data\Book.cs" />
     <Compile Include="Data\BookManager.cs" />
+    <Compile Include="Data\Token.cs" />
+    <Compile Include="Data\Utils.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

@@ -3,23 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FinMan.MainPage"
              Title="Library Books">
-  <ContentPage.ToolbarItems>
-    <ToolbarItem Text="Add New" Icon="ic_action_new.png" Clicked="OnAddNewBook" />
-    <ToolbarItem Text="Refresh" Icon="ic_autorenew.png" Clicked="OnRefresh" />
-  </ContentPage.ToolbarItems>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add New" Icon="ic_action_new.png" Clicked="OnAddNewBook" />
+        <ToolbarItem Text="Refresh" Icon="ic_autorenew.png" Clicked="OnRefresh" />
+    </ContentPage.ToolbarItems>
 
-  <ListView ItemsSource="{Binding}"
+    <ListView ItemsSource="{Binding}"
           ItemTapped="OnEditBook">
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <TextCell Text="{Binding Title}" Detail="{Binding Genre}">
-          <TextCell.ContextActions>
-            <MenuItem Clicked="OnDeleteBook"
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding accountType}" Detail="{Binding availableBalance}">
+                    <TextCell.ContextActions>
+                        <MenuItem Clicked="OnDeleteBook"
                 CommandParameter="{Binding}"
                 Text="Delete" IsDestructive="True" />
-          </TextCell.ContextActions>
-        </TextCell>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-  </ListView>
+                    </TextCell.ContextActions>
+                </TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
