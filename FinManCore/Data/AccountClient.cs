@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace FinMan.Data
 {
-    class AccountClient
+    public class AccountClient
     {
         const string Url = "https://dnbapistore.com/hackathon/accounts/1.0/account";
         public async Task<AccountCustomer> GetAllAccounts(string customerId)
@@ -16,6 +16,21 @@ namespace FinMan.Data
             var client = await Utils.GetClient();
             string result = await client.GetStringAsync(Url + "/customer/" + customerId);
             return JsonConvert.DeserializeObject<AccountCustomer>(result);
+        }
+
+        public async Task<IEnumerable<CustomerAccount>> GetAllAccountDetails(string customerId)
+        {
+            var client = await Utils.GetClient();
+            string result = await client.GetStringAsync(Url + "/customer/" + customerId);
+            var accountCustomer = JsonConvert.DeserializeObject<AccountCustomer>(result);
+            List<CustomerAccount> accountDetails = new List<CustomerAccount>();
+
+            foreach (var account in accountCustomer.accounts)
+            {
+                var details = await GetCustomerAccountDetails(customerId, account.accountNumber.ToString());
+                accountDetails.Add(details);
+            }
+            return accountDetails;
         }
 
         public async Task<AccountResponse> CreateAccount(string customerId, string name, string type, string currency)
@@ -42,11 +57,13 @@ namespace FinMan.Data
             return JsonConvert.DeserializeObject<UpdateAccountNameResponse>(await result.Content.ReadAsStringAsync());
         }
 
-        public async Task<Account> GetCustomerAccountDetails(string customerId, string account)
+        public async Task<CustomerAccount> GetCustomerAccountDetails(string customerId, string account)
         {
             var client = await Utils.GetClient();
             string result = await client.GetStringAsync(Url + $"/details?accountNumber={account}&customerID={customerId}");
-            return JsonConvert.DeserializeObject<Account>(result);
+            var r = JsonConvert.DeserializeObject<CustomerAccount>(result);
+
+            return r;
         }
 
         public async Task<GetBalanceResponse> GetBalance(string customerId, string account)

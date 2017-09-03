@@ -49,8 +49,8 @@ namespace FinMan.Data
         public string customerID { get; set; }
         public string accountName { get; set; }
         public string accountType { get; set; }
-        public int availableBalance { get; set; }
-        public int bookBalance { get; set; }
+        public double availableBalance { get; set; }
+        public double bookBalance { get; set; }
         public string accountStatus { get; set; }
         public string created { get; set; }
         public string currency { get; set; }

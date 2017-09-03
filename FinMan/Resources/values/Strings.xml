@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="hello">Hello World, Click Me!</string>
+  <string name="hello">Get my accounts</string>
   <string name="app_name">FinMan</string>
+  <string name="Facebook">Login with Facebook</string>
+  <string name="facebook_app_id">745282022342812</string>
+  <string name="fb_login_protocol_scheme">fb745282022342812</string>
+
 </resources>

@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>03-09-2017 11:09:42</xs:documentation>
+    <xs:documentation>03-09-2017 21:41:49</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -4022,6 +4022,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -4080,6 +4083,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -4775,6 +4781,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -5371,6 +5380,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -6632,6 +6644,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -6966,6 +6981,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -12246,6 +12264,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -12304,6 +12325,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -12941,6 +12965,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -12999,6 +13026,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -13057,6 +13087,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -18663,6 +18696,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -18821,6 +18857,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkBox1" />
+            <xs:enumeration value="@id/accountListView" />
             <xs:enumeration value="@id/com_facebook_body_frame" />
             <xs:enumeration value="@id/com_facebook_button_xout" />
             <xs:enumeration value="@id/com_facebook_fragment_container" />
@@ -18828,8 +18865,18 @@
             <xs:enumeration value="@id/com_facebook_tooltip_bubble_view_bottom_pointer" />
             <xs:enumeration value="@id/com_facebook_tooltip_bubble_view_text_body" />
             <xs:enumeration value="@id/com_facebook_tooltip_bubble_view_top_pointer" />
+            <xs:enumeration value="@id/customerNumberTextBox" />
+            <xs:enumeration value="@id/FacebookButton" />
+            <xs:enumeration value="@id/FirstName" />
+            <xs:enumeration value="@id/imageView1" />
+            <xs:enumeration value="@id/LastName" />
+            <xs:enumeration value="@id/linearLayout1" />
             <xs:enumeration value="@id/messenger_send_button" />
             <xs:enumeration value="@id/myButton" />
+            <xs:enumeration value="@id/ProfilePic" />
+            <xs:enumeration value="@id/textView1" />
+            <xs:enumeration value="@id/textView2" />
+            <xs:enumeration value="@id/UserId" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -19199,6 +19246,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -20600,6 +20650,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -23511,6 +23564,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -23745,6 +23801,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -24055,6 +24114,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -24855,6 +24917,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -26982,6 +27047,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -29242,6 +29310,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -30344,6 +30415,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -34140,6 +34214,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -35544,6 +35621,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -36781,6 +36861,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -38661,6 +38744,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -38719,6 +38805,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -42172,6 +42261,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -42230,6 +42322,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -44573,6 +44668,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -44747,6 +44845,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />
@@ -46120,6 +46221,9 @@
             <xs:enumeration value="@string/com_facebook_send_button_text" />
             <xs:enumeration value="@string/com_facebook_share_button_text" />
             <xs:enumeration value="@string/com_facebook_tooltip_default" />
+            <xs:enumeration value="@string/Facebook" />
+            <xs:enumeration value="@string/facebook_app_id" />
+            <xs:enumeration value="@string/fb_login_protocol_scheme" />
             <xs:enumeration value="@string/hello" />
             <xs:enumeration value="@string/messenger_send_button_text" />
             <xs:enumeration value="@android:string/cancel" />

@@ -23,7 +23,7 @@ namespace FinMan.Data
         public string paymentDate { get; set; }
         public string debitAccountNumber { get; set; }
         public string creditAccountNumber { get; set; }
-        public int amount { get; set; }
+        public double amount { get; set; }
         public long paymentIDNumber { get; set; }
     }
 
@@ -43,7 +43,7 @@ namespace FinMan.Data
         public string paymentDate { get; set; }
         public string debitAccountNumber { get; set; }
         public string creditAccountNumber { get; set; }
-        public int amount { get; set; }
+        public double amount { get; set; }
         public string kidNumber { get; set; }
         public long paymentIDNumber { get; set; }
     }

@@ -99,8 +99,12 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "FinMan.dll" comes first in this list. */
 		"FinMan.dll",
+		"FinManCore.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Facebook.dll",
+		"Xamarin.Forms.Core.dll",
+		"Xamarin.Forms.Platform.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

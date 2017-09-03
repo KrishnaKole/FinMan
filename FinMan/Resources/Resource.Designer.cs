@@ -296,6 +296,24 @@ namespace FinMan
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f09001d
+			public const int FacebookButton = 2131296285;
+			
+			// aapt resource value: 0x7f09001f
+			public const int FirstName = 2131296287;
+			
+			// aapt resource value: 0x7f090020
+			public const int LastName = 2131296288;
+			
+			// aapt resource value: 0x7f09001e
+			public const int ProfilePic = 2131296286;
+			
+			// aapt resource value: 0x7f090021
+			public const int UserId = 2131296289;
+			
+			// aapt resource value: 0x7f090024
+			public const int accountListView = 2131296292;
+			
 			// aapt resource value: 0x7f09000c
 			public const int automatic = 2131296268;
 			
@@ -332,8 +350,14 @@ namespace FinMan
 			// aapt resource value: 0x7f090015
 			public const int com_facebook_tooltip_bubble_view_top_pointer = 2131296277;
 			
+			// aapt resource value: 0x7f090022
+			public const int customerNumberTextBox = 2131296290;
+			
 			// aapt resource value: 0x7f09000d
 			public const int display_always = 2131296269;
+			
+			// aapt resource value: 0x7f090019
+			public const int imageView1 = 2131296281;
 			
 			// aapt resource value: 0x7f090007
 			public const int inline = 2131296263;
@@ -345,10 +369,13 @@ namespace FinMan
 			public const int left = 2131296266;
 			
 			// aapt resource value: 0x7f09001a
-			public const int messenger_send_button = 2131296282;
+			public const int linearLayout1 = 2131296282;
 			
-			// aapt resource value: 0x7f090019
-			public const int myButton = 2131296281;
+			// aapt resource value: 0x7f090025
+			public const int messenger_send_button = 2131296293;
+			
+			// aapt resource value: 0x7f090023
+			public const int myButton = 2131296291;
 			
 			// aapt resource value: 0x7f09000e
 			public const int never_display = 2131296270;
@@ -370,6 +397,12 @@ namespace FinMan
 			
 			// aapt resource value: 0x7f090005
 			public const int standard = 2131296261;
+			
+			// aapt resource value: 0x7f09001b
+			public const int textView1 = 2131296283;
+			
+			// aapt resource value: 0x7f09001c
+			public const int textView2 = 2131296284;
 			
 			// aapt resource value: 0x7f090008
 			public const int top = 2131296264;
@@ -400,28 +433,31 @@ namespace FinMan
 			public const int com_facebook_tooltip_bubble = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int Login = 2130968579;
+			public const int ListItem = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int Main = 2130968580;
+			public const int Login = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int messenger_button_send_blue_large = 2130968581;
+			public const int Main = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int messenger_button_send_blue_round = 2130968582;
+			public const int messenger_button_send_blue_large = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int messenger_button_send_blue_small = 2130968583;
+			public const int messenger_button_send_blue_round = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int messenger_button_send_white_large = 2130968584;
+			public const int messenger_button_send_blue_small = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public const int messenger_button_send_white_round = 2130968585;
+			public const int messenger_button_send_white_large = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int messenger_button_send_white_small = 2130968586;
+			public const int messenger_button_send_white_round = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int messenger_button_send_white_small = 2130968587;
 			
 			static Layout()
 			{
@@ -451,6 +487,9 @@ namespace FinMan
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f050013
+			public const int Facebook = 2131034131;
 			
 			// aapt resource value: 0x7f050012
 			public const int app_name = 2131034130;
@@ -502,6 +541,12 @@ namespace FinMan
 			
 			// aapt resource value: 0x7f05000f
 			public const int com_facebook_tooltip_default = 2131034127;
+			
+			// aapt resource value: 0x7f050014
+			public const int facebook_app_id = 2131034132;
+			
+			// aapt resource value: 0x7f050015
+			public const int fb_login_protocol_scheme = 2131034133;
 			
 			// aapt resource value: 0x7f050011
 			public const int hello = 2131034129;

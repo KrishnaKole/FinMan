@@ -197,6 +197,12 @@ containing a value of this type.
         public static final int messenger_button_white_bg_selector=0x7f02001a;
     }
     public static final class id {
+        public static final int FacebookButton=0x7f09001d;
+        public static final int FirstName=0x7f09001f;
+        public static final int LastName=0x7f090020;
+        public static final int ProfilePic=0x7f09001e;
+        public static final int UserId=0x7f090021;
+        public static final int accountListView=0x7f090024;
         public static final int automatic=0x7f09000c;
         public static final int bottom=0x7f090006;
         public static final int box_count=0x7f090003;
@@ -209,12 +215,15 @@ containing a value of this type.
         public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f090018;
         public static final int com_facebook_tooltip_bubble_view_text_body=0x7f090017;
         public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f090015;
+        public static final int customerNumberTextBox=0x7f090022;
         public static final int display_always=0x7f09000d;
+        public static final int imageView1=0x7f090019;
         public static final int inline=0x7f090007;
         public static final int large=0x7f09000f;
         public static final int left=0x7f09000a;
-        public static final int messenger_send_button=0x7f09001a;
-        public static final int myButton=0x7f090019;
+        public static final int linearLayout1=0x7f09001a;
+        public static final int messenger_send_button=0x7f090025;
+        public static final int myButton=0x7f090023;
         public static final int never_display=0x7f09000e;
         public static final int normal=0x7f090010;
         public static final int open_graph=0x7f090000;
@@ -222,6 +231,8 @@ containing a value of this type.
         public static final int right=0x7f09000b;
         public static final int small=0x7f090011;
         public static final int standard=0x7f090005;
+        public static final int textView1=0x7f09001b;
+        public static final int textView2=0x7f09001c;
         public static final int top=0x7f090008;
         public static final int unknown=0x7f090002;
     }
@@ -229,19 +240,21 @@ containing a value of this type.
         public static final int com_facebook_activity_layout=0x7f040000;
         public static final int com_facebook_login_fragment=0x7f040001;
         public static final int com_facebook_tooltip_bubble=0x7f040002;
-        public static final int login=0x7f040003;
-        public static final int main=0x7f040004;
-        public static final int messenger_button_send_blue_large=0x7f040005;
-        public static final int messenger_button_send_blue_round=0x7f040006;
-        public static final int messenger_button_send_blue_small=0x7f040007;
-        public static final int messenger_button_send_white_large=0x7f040008;
-        public static final int messenger_button_send_white_round=0x7f040009;
-        public static final int messenger_button_send_white_small=0x7f04000a;
+        public static final int listitem=0x7f040003;
+        public static final int login=0x7f040004;
+        public static final int main=0x7f040005;
+        public static final int messenger_button_send_blue_large=0x7f040006;
+        public static final int messenger_button_send_blue_round=0x7f040007;
+        public static final int messenger_button_send_blue_small=0x7f040008;
+        public static final int messenger_button_send_white_large=0x7f040009;
+        public static final int messenger_button_send_white_round=0x7f04000a;
+        public static final int messenger_button_send_white_small=0x7f04000b;
     }
     public static final class mipmap {
         public static final int icon=0x7f030000;
     }
     public static final class string {
+        public static final int Facebook=0x7f050013;
         public static final int app_name=0x7f050012;
         public static final int com_facebook_image_download_unknown_error=0x7f050000;
         public static final int com_facebook_internet_permission_error_message=0x7f050001;
@@ -259,6 +272,8 @@ containing a value of this type.
         public static final int com_facebook_send_button_text=0x7f05000d;
         public static final int com_facebook_share_button_text=0x7f05000e;
         public static final int com_facebook_tooltip_default=0x7f05000f;
+        public static final int facebook_app_id=0x7f050014;
+        public static final int fb_login_protocol_scheme=0x7f050015;
         public static final int hello=0x7f050011;
         public static final int messenger_send_button_text=0x7f050010;
     }
@@ -292,12 +307,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position FinMan.FinMan:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color FinMan.FinMan:com_facebook_foreground_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment FinMan.FinMan:com_facebook_horizontal_alignment}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id FinMan.FinMan:com_facebook_object_id}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type FinMan.FinMan:com_facebook_object_type}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style FinMan.FinMan:com_facebook_style}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.FinMan.FinMan:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.FinMan.FinMan:com_facebook_foreground_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.FinMan.FinMan:com_facebook_horizontal_alignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.FinMan.FinMan:com_facebook_object_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.FinMan.FinMan:com_facebook_object_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.FinMan.FinMan:com_facebook_style}</code></td><td></td></tr>
            </table>
            @see #com_facebook_like_view_com_facebook_auxiliary_view_position
            @see #com_facebook_like_view_com_facebook_foreground_color
@@ -311,7 +326,7 @@ containing a value of this type.
             0x7f010004, 0x7f010005
         };
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_auxiliary_view_position}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_auxiliary_view_position}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -325,11 +340,11 @@ containing a value of this type.
 <tr><td><code>inline</code></td><td>1</td><td></td></tr>
 <tr><td><code>top</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name FinMan.FinMan:com_facebook_auxiliary_view_position
+          @attr name com.FinMan.FinMan:com_facebook_auxiliary_view_position
         */
         public static final int com_facebook_like_view_com_facebook_auxiliary_view_position = 4;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_foreground_color}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_foreground_color}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -340,11 +355,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name FinMan.FinMan:com_facebook_foreground_color
+          @attr name com.FinMan.FinMan:com_facebook_foreground_color
         */
         public static final int com_facebook_like_view_com_facebook_foreground_color = 0;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_horizontal_alignment}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_horizontal_alignment}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -358,11 +373,11 @@ containing a value of this type.
 <tr><td><code>left</code></td><td>1</td><td></td></tr>
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name FinMan.FinMan:com_facebook_horizontal_alignment
+          @attr name com.FinMan.FinMan:com_facebook_horizontal_alignment
         */
         public static final int com_facebook_like_view_com_facebook_horizontal_alignment = 5;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_object_id}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_object_id}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -372,11 +387,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name FinMan.FinMan:com_facebook_object_id
+          @attr name com.FinMan.FinMan:com_facebook_object_id
         */
         public static final int com_facebook_like_view_com_facebook_object_id = 1;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_object_type}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_object_type}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -390,11 +405,11 @@ containing a value of this type.
 <tr><td><code>open_graph</code></td><td>1</td><td></td></tr>
 <tr><td><code>page</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name FinMan.FinMan:com_facebook_object_type
+          @attr name com.FinMan.FinMan:com_facebook_object_type
         */
         public static final int com_facebook_like_view_com_facebook_object_type = 2;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_style}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_style}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -408,7 +423,7 @@ containing a value of this type.
 <tr><td><code>button</code></td><td>1</td><td></td></tr>
 <tr><td><code>box_count</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name FinMan.FinMan:com_facebook_style
+          @attr name com.FinMan.FinMan:com_facebook_style
         */
         public static final int com_facebook_like_view_com_facebook_style = 3;
         /** Attributes that can be used with a com_facebook_login_view.
@@ -417,10 +432,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout FinMan.FinMan:com_facebook_confirm_logout}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text FinMan.FinMan:com_facebook_login_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text FinMan.FinMan:com_facebook_logout_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode FinMan.FinMan:com_facebook_tooltip_mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.FinMan.FinMan:com_facebook_confirm_logout}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.FinMan.FinMan:com_facebook_login_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.FinMan.FinMan:com_facebook_logout_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.FinMan.FinMan:com_facebook_tooltip_mode}</code></td><td></td></tr>
            </table>
            @see #com_facebook_login_view_com_facebook_confirm_logout
            @see #com_facebook_login_view_com_facebook_login_text
@@ -431,7 +446,7 @@ containing a value of this type.
             0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009
         };
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_confirm_logout}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_confirm_logout}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -441,11 +456,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name FinMan.FinMan:com_facebook_confirm_logout
+          @attr name com.FinMan.FinMan:com_facebook_confirm_logout
         */
         public static final int com_facebook_login_view_com_facebook_confirm_logout = 0;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_login_text}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_login_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -455,11 +470,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name FinMan.FinMan:com_facebook_login_text
+          @attr name com.FinMan.FinMan:com_facebook_login_text
         */
         public static final int com_facebook_login_view_com_facebook_login_text = 1;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_logout_text}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_logout_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -469,11 +484,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name FinMan.FinMan:com_facebook_logout_text
+          @attr name com.FinMan.FinMan:com_facebook_logout_text
         */
         public static final int com_facebook_login_view_com_facebook_logout_text = 2;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_tooltip_mode}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_tooltip_mode}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -487,7 +502,7 @@ containing a value of this type.
 <tr><td><code>display_always</code></td><td>1</td><td></td></tr>
 <tr><td><code>never_display</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name FinMan.FinMan:com_facebook_tooltip_mode
+          @attr name com.FinMan.FinMan:com_facebook_tooltip_mode
         */
         public static final int com_facebook_login_view_com_facebook_tooltip_mode = 3;
         /** Attributes that can be used with a com_facebook_profile_picture_view.
@@ -496,8 +511,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped FinMan.FinMan:com_facebook_is_cropped}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size FinMan.FinMan:com_facebook_preset_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.FinMan.FinMan:com_facebook_is_cropped}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.FinMan.FinMan:com_facebook_preset_size}</code></td><td></td></tr>
            </table>
            @see #com_facebook_profile_picture_view_com_facebook_is_cropped
            @see #com_facebook_profile_picture_view_com_facebook_preset_size
@@ -506,7 +521,7 @@ containing a value of this type.
             0x7f01000a, 0x7f01000b
         };
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_is_cropped}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_is_cropped}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -516,11 +531,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name FinMan.FinMan:com_facebook_is_cropped
+          @attr name com.FinMan.FinMan:com_facebook_is_cropped
         */
         public static final int com_facebook_profile_picture_view_com_facebook_is_cropped = 1;
         /**
-          <p>This symbol is the offset where the {@link FinMan.FinMan.R.attr#com_facebook_preset_size}
+          <p>This symbol is the offset where the {@link com.FinMan.FinMan.R.attr#com_facebook_preset_size}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -534,7 +549,7 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>-3</td><td></td></tr>
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
-          @attr name FinMan.FinMan:com_facebook_preset_size
+          @attr name com.FinMan.FinMan:com_facebook_preset_size
         */
         public static final int com_facebook_profile_picture_view_com_facebook_preset_size = 0;
     };

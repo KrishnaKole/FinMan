@@ -2,10 +2,18 @@ FinMan.LoginActivity, FinMan;md55cdfd2b47878866aa1c0ff83f80a592b.LoginActivity
 FinMan.LoginActivity, FinMan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55cdfd2b47878866aa1c0ff83f80a592b.LoginActivity
 FinMan.LoginActivity;md55cdfd2b47878866aa1c0ff83f80a592b.LoginActivity
 finman.LoginActivity;md55cdfd2b47878866aa1c0ff83f80a592b.LoginActivity
+FinMan.MyProfileTracker, FinMan;md55cdfd2b47878866aa1c0ff83f80a592b.MyProfileTracker
+FinMan.MyProfileTracker, FinMan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55cdfd2b47878866aa1c0ff83f80a592b.MyProfileTracker
+FinMan.MyProfileTracker;md55cdfd2b47878866aa1c0ff83f80a592b.MyProfileTracker
+finman.MyProfileTracker;md55cdfd2b47878866aa1c0ff83f80a592b.MyProfileTracker
 FinMan.MainActivity, FinMan;md55cdfd2b47878866aa1c0ff83f80a592b.MainActivity
 FinMan.MainActivity, FinMan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55cdfd2b47878866aa1c0ff83f80a592b.MainActivity
 FinMan.MainActivity;md55cdfd2b47878866aa1c0ff83f80a592b.MainActivity
 finman.MainActivity;md55cdfd2b47878866aa1c0ff83f80a592b.MainActivity
+FinMan.Custom.AccountAdapter, FinMan;md52b6f584f2bae752204fbb4c94d53c18a.AccountAdapter
+FinMan.Custom.AccountAdapter, FinMan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52b6f584f2bae752204fbb4c94d53c18a.AccountAdapter
+FinMan.Custom.AccountAdapter;md52b6f584f2bae752204fbb4c94d53c18a.AccountAdapter
+finman.custom.AccountAdapter;md52b6f584f2bae752204fbb4c94d53c18a.AccountAdapter
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

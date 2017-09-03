@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Components/facebookandroid-4.24.0.0/samples
+/Components/xamarin.auth-1.2.3.1/samples

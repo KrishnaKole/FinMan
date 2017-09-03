@@ -26,7 +26,7 @@ C:\Git\DNB Hackathon\FinManCore\bin\Debug\Xamarin.Forms.Core.xml
 C:\Git\DNB Hackathon\FinManCore\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Git\DNB Hackathon\FinManCore\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Git\DNB Hackathon\FinManCore\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.csprojResolveAssemblyReference.cache
 C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.csproj.CoreCompileInputs.cache
 C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.dll
 C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.pdb
+C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.csprojResolveAssemblyReference.cache
