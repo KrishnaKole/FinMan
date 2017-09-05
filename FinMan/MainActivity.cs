@@ -9,7 +9,7 @@ using FinMan.Custom;
 
 namespace FinMan
 {
-    [Activity(Label = "FinMan", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "FinMan", /*MainLauncher = true, */Icon = "@mipmap/icon")]
     public class MainActivity : Activity
     {
         int count = 1;

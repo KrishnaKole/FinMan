@@ -17,7 +17,7 @@ using Xamarin.Facebook.Login.Widget;
 
 namespace FinMan
 {
-    [Activity(Label = "Login",  Icon = "@mipmap/icon")]
+    [Activity(Label = "Login", Icon = "@mipmap/icon", MainLauncher = true)]
     public class LoginActivity : Activity, IFacebookCallback
     {
         private ICallbackManager mCallbackManager;
@@ -32,7 +32,7 @@ namespace FinMan
             base.OnCreate(savedInstanceState);
 
             FacebookSdk.SdkInitialize(this.ApplicationContext);
-             // Create your application here
+            // Create your application here
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Login);
 
@@ -40,8 +40,8 @@ namespace FinMan
             mProfileTracker.StartTracking();
             mProfileTracker.mOnProfileChanged += MProfileTracker_mOnProfileChanged;
 
-            txtFistName = FindViewById<TextView>(Resource.Id.FirstName);
-            txtLastName = FindViewById<TextView>(Resource.Id.LastName);
+            //txtFistName = FindViewById<TextView>(Resource.Id.FirstName);
+            //txtLastName = FindViewById<TextView>(Resource.Id.LastName);
             mProfilePic = FindViewById<ProfilePictureView>(Resource.Id.ProfilePic);
 
             // Get our button from the layout resource,
@@ -58,7 +58,7 @@ namespace FinMan
 
         }
 
-        private void MProfileTracker_mOnProfileChanged(object sender,OnProfileChangedEventArgs e)
+        private void MProfileTracker_mOnProfileChanged(object sender, OnProfileChangedEventArgs e)
         {
             if (e.mProfile != null)
             {
@@ -66,7 +66,7 @@ namespace FinMan
                 txtLastName.Text = e.mProfile.LastName;
                 mProfilePic.ProfileId = e.mProfile.Id;
             }
-           
+
         }
 
         public void OnCancel()
