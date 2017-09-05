@@ -1,0 +1,1 @@
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"><com.nulana.NChart.NChartView android:id="@+id/nchart3d" android:layout_height="fill_parent" android:layout_width="fill_parent" /></LinearLayout>

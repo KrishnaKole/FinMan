@@ -30,3 +30,6 @@ C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.csproj.CoreCompileInputs.ca
 C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.dll
 C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.pdb
 C:\Git\DNB Hackathon\FinManCore\obj\Debug\FinManCore.csprojResolveAssemblyReference.cache
+C:\Git\DNB Hackathon\FinManCore\bin\Debug\OxyPlot.dll
+C:\Git\DNB Hackathon\FinManCore\bin\Debug\OxyPlot.pdb
+C:\Git\DNB Hackathon\FinManCore\bin\Debug\OxyPlot.xml

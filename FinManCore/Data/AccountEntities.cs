@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace FinMan.Data
 {
@@ -65,11 +66,13 @@ namespace FinMan.Data
 
     public class Transaction
     {
-        public string creditAccountNumber { get; set; }
-        public long transactionID { get; set; }
-        public int date { get; set; }
-        public int amount { get; set; }
-        public string description { get; set; }
+        public string transactionID { get; set; }
+        public string date { get; set; }
+        public double amount { get; set; }
+        [JsonProperty(PropertyName = "message/KID")]
+        public string messageKID { get; set; }
+        public string transactionAccountNumber { get; set; }
+        public string transactionAccountName { get; set; }
     }
 
     public class UpdateAccountNameRequest
@@ -100,6 +103,8 @@ namespace FinMan.Data
         public int bookBalance { get; set; }
         public string currency { get; set; }
     }
+
+
 
 }
 
