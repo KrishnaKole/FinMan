@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using FinMan.Data;
 
 namespace FinMan.Custom
 {
@@ -56,4 +57,12 @@ namespace FinMan.Custom
         public double Balance { get; set; }
         public string Currency { get; set; }
     }
+
+    public class Settings
+    {
+        public static string CustomerNumber { get; set; }
+        public static List<string> AccountList { get; set; }
+        public static List<Target> TargetList { get; set; }
+    }
+    
 }

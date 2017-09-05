@@ -18,7 +18,7 @@ namespace FinMan.Data
             return JsonConvert.DeserializeObject<CustomerResponse>(await result.Content.ReadAsStringAsync());
         }
 
-        public async Task<UpdateCustomerRequestResponse> UpdateCustomer(string customerId, string phoneNumber,string email, string street, string postalCode, string city, string country)
+        public async Task<UpdateCustomerRequestResponse> UpdateCustomer(string customerId, string phoneNumber, string email, string street, string postalCode, string city, string country)
         {
             UpdateCustomerRequestResponse customer = new UpdateCustomerRequestResponse { customerID = customerId, email = email, phoneNumber = phoneNumber, address = new Address { street = street, postalCode = postalCode, city = city, country = country } };
             var client = await Utils.GetClient();
@@ -29,6 +29,10 @@ namespace FinMan.Data
 
         public async Task<CustomerResponse> GetCustomerAccountDetails(string customerId)
         {
+            var actClient = new AccountClient();
+
+
+
             var client = await Utils.GetClient();
             string result = await client.GetStringAsync(Url + $"/{customerId}");
             return JsonConvert.DeserializeObject<CustomerResponse>(result);

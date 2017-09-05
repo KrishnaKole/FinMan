@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -83,10 +84,25 @@ namespace FinMan.Data
         public async Task<AccountTransaction> GetAccountTransactions(string customerId, string account, DateTime from, DateTime to)
         {
             var client = await Utils.GetClient();
-            string dateFrom = from.ToString("ddmmyyyy");
-            string dateTo = to.ToString("ddmmyyyy");
-            string result = await client.GetStringAsync(Url + $"/accountNumber={account}&customerID={customerId}&dateFrom={dateFrom}&dateTo={dateTo}");
+            string dateFrom = from.ToString("ddMMyyyy");
+            string dateTo = to.ToString("ddMMyyyy");
+            string result = await client.GetStringAsync(Url + $"?accountNumber={account}&customerID={customerId}&dateFrom={dateFrom}&dateTo={dateTo}");
             return JsonConvert.DeserializeObject<AccountTransaction>(result);
+        }
+
+        public async Task<List<Transaction>> GetCustomerAllAccountTransactions(string customerId, DateTime from, DateTime to)
+        {
+            var client = await Utils.GetClient();
+            string result = await client.GetStringAsync(Url + "/customer/" + customerId);
+            var accountCustomer = JsonConvert.DeserializeObject<AccountCustomer>(result);
+            List<Transaction> accountTransactions = new List<Transaction>();
+
+            foreach (var account in accountCustomer.accounts)
+            {
+                var details = await GetAccountTransactions(customerId, account.accountNumber.ToString(), from, to);
+                accountTransactions.AddRange(details.transactions.ToList());
+            }
+            return accountTransactions;
         }
 
         public async Task<AddDisponentRequestResponse> AddDisponent(string disponentId, string account)

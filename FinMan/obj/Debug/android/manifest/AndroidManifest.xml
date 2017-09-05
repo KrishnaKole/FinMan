@@ -15,6 +15,7 @@
         <data android:scheme="@string/fb_login_protocol_scheme" />
       </intent-filter>
     </activity>
+    <activity android:label="CategoryActivity" android:name="md55cdfd2b47878866aa1c0ff83f80a592b.CategoryActivity" />
     <activity android:icon="@mipmap/icon" android:label="Login" android:name="md55cdfd2b47878866aa1c0ff83f80a592b.LoginActivity" />
     <activity android:icon="@mipmap/icon" android:label="FinMan" android:name="md55cdfd2b47878866aa1c0ff83f80a592b.MainActivity">
       <intent-filter>

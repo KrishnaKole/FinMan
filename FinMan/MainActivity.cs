@@ -6,6 +6,7 @@ using FinMan.Data;
 using System;
 using System.Linq;
 using FinMan.Custom;
+using Android.Content;
 
 namespace FinMan
 {
@@ -26,11 +27,23 @@ namespace FinMan
             // Get our button from the layout resource,
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.myButton);
-
             button.Click += OnGetAllAccountsClicked;
             accountClient = new AccountClient();
 
+            Button profileButton = FindViewById<Button>(Resource.Id.goToProfile);
+            profileButton.Click += OnGoToProfileClicked;
+            
         }
+
+        private void OnGoToProfileClicked(object sender, EventArgs e)
+        {
+            Intent intent = new Intent();
+            intent.SetClass(this, typeof(CategoryActivity));
+            customerNumberTextbox = FindViewById<EditText>(Resource.Id.customerNumberTextBox);
+            intent.PutExtra("CustomerId", customerNumberTextbox.Text);
+            StartActivity(intent);
+        }
+
         async void OnGetAllAccountsClicked(object sender, EventArgs e)
         {
             customerNumberTextbox = FindViewById<EditText>(Resource.Id.customerNumberTextBox);

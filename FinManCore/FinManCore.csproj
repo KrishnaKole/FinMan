@@ -37,10 +37,12 @@
   <ItemGroup>
     <Compile Include="Data\AccountClient.cs" />
     <Compile Include="Data\AccountEntities.cs" />
+    <Compile Include="Data\CategoryManager.cs" />
     <Compile Include="Data\CustomerClient.cs" />
     <Compile Include="Data\CustomerEntities.cs" />
     <Compile Include="Data\PaymentClient.cs" />
     <Compile Include="Data\PaymentEntities.cs" />
+    <Compile Include="Data\Target.cs" />
     <Compile Include="Data\Token.cs" />
     <Compile Include="Data\Utils.cs" />
     <Compile Include="FinManCore.cs" />
@@ -50,6 +52,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="OxyPlot, Version=2015.1.744.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Core.2015.1.744-alpha\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.270\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>

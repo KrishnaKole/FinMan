@@ -4,6 +4,6 @@
     <SelectedDevice>Motorola Moto G %284%29</SelectedDevice>
     <DefaultDevice>VisualStudio_android-23_arm_phone</DefaultDevice>
     <AndroidDesignerPreferredDevice>5.1in WVGA</AndroidDesignerPreferredDevice>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

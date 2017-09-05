@@ -5,5 +5,5 @@
   <string name="Facebook">Login with Facebook</string>
   <string name="facebook_app_id">745282022342812</string>
   <string name="fb_login_protocol_scheme">fb745282022342812</string>
-
+  <string name="goToProfile">Go to Finance profile</string>
 </resources>
