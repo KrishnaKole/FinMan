@@ -26,7 +26,7 @@ namespace FinMan.Data
             if (prevThreeTargets == null)
             {
                 targetCategory = transactions.FirstOrDefault(x => x.Value == transactions.Values.Max());
-                if (targetCategory.Key == Category.Unknown)
+                if (targetCategory.Key == Category.Overall)
                 {
                     targetCategory = transactions.Where(t => t.Value < targetCategory.Value).OrderByDescending(x => x.Value).FirstOrDefault();
                 }
@@ -35,12 +35,12 @@ namespace FinMan.Data
             DateTime now = DateTime.Now;
             return new Target
             {
-                AllowedAmount = targetCategory.Value * 0.9 / 6.0,
+                AllowedAmount = targetCategory.Value * 0.9 / 4.0,
                 Category = targetCategory.Key,
                 StartDate = DateTime.Now.AddDays(DateTime.Now.Day * -1),
                 EndDate = new DateTime(now.Year, now.Month,
                                      DateTime.DaysInMonth(now.Year, now.Month)),
-                SpentAmount = currentTransactions.ContainsKey(targetCategory.Key) ? -1 * currentTransactions[targetCategory.Key] : 0,
+                SpentAmount = currentTransactions.ContainsKey(targetCategory.Key) ? currentTransactions[targetCategory.Key] : 0,
 
             };
         }

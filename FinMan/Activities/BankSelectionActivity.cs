@@ -12,7 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Xamarin.Forms.PlatformConfiguration;
 
-namespace FinMan.Resources
+namespace FinMan
 {
     [Activity]
     public class BankSelectionActivity : Activity

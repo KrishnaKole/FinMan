@@ -106,8 +106,8 @@ namespace DifferentCharts
                 mNChartView.Chart.AddSeries(series);
             }
 
-            temp = Category.Unknown;
-            if (category.ContainsKey(Category.Unknown))
+            temp = Category.Overall;
+            if (category.ContainsKey(Category.Overall))
             {
                 brushes[temp] = new NChartSolidColorBrush(Color.Argb(255, 0, 0, 255));
                 NChartPieSeries series = GetSeries(temp);

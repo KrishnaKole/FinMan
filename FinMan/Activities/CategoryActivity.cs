@@ -12,25 +12,37 @@ using FinMan.Data;
 using System.Threading.Tasks;
 using NChart3D_Android;
 using DifferentCharts;
+using Android.Support.V4.Widget;
+using FinMan;
+using Android.Support.V4.App;
+using Android.Content.Res;
+
 
 namespace FinMan
 {
     [Activity]
     public class CategoryActivity : Activity
     {
+        protected DrawerLayout mDrawerLayout;
+        protected List<string> mLeftItems = new List<string>();
+        ArrayAdapter mLeftAdapter;
+        ListView mLeftDrawer;
+        ActionBarDrawerToggle mDrawerTogle;
+        Button nextPageButton;
         NChartView mNChartView;
         protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Category);
             // Create your application here
-            var customerId = Intent.Extras.GetString("CustomerId", "14127497026");
+            SetNavigation();
+            var customerId = Intent.Extras.GetString("PersonalNumber", "14127497026");
             customerId = customerId == "" ? "14127497026" : customerId;
             ProgressBar pb = FindViewById<ProgressBar>(Resource.Id.targetProgressBar);
             pb.Elevation = 20;
             pb.Tag = "Target";
             pb.LayoutParameters.Height = 50;
-            
+
 
             NChartView view = FindViewById<NChartView>(Resource.Id.nchart3d);
             mNChartView = FindViewById<NChartView>(Resource.Id.nchart3d);
@@ -38,7 +50,7 @@ namespace FinMan
             CreatePlotModel(customerId);
 
             var target = await GetTarget(customerId);
-            pb.Progress = (int)((-1 * target.SpentAmount) * 100 / target.AllowedAmount);
+            pb.Progress = (int)((target.SpentAmount) * 100 / target.AllowedAmount);
 
             TextView spent = FindViewById<TextView>(Resource.Id.spentText);
             spent.SetTextColor(Android.Graphics.Color.Red);
@@ -56,9 +68,9 @@ namespace FinMan
         private async Task<Target> GetTarget(string customerId)
         {
             AccountClient client = new AccountClient();
-            var prev = DateTime.Now.AddMonths(-6);
-            var transactions = await client.GetCustomerAllAccountTransactions(customerId, new DateTime(prev.Year, prev.Month, 1), new DateTime(prev.Year, prev.AddMonths(5).Month,
-                                     DateTime.DaysInMonth(prev.Year, prev.AddMonths(5).Month)));
+            var prev = DateTime.Now.AddMonths(-4);
+            var transactions = await client.GetCustomerAllAccountTransactions(customerId, new DateTime(prev.Year, prev.Month, 1), new DateTime(prev.Year, prev.AddMonths(3).Month,
+                                     DateTime.DaysInMonth(prev.Year, prev.AddMonths(3).Month)));
 
             var categorizedResult = CategoryManager.CategorizeTransactions(transactions);
 
@@ -85,5 +97,91 @@ namespace FinMan
             controller.HoleRatio = 0.6f;
             controller.UpdateData(categorizedResult);
         }
+        private void SetNavigation()
+        {
+            mDrawerLayout = FindViewById<DrawerLayout>(Resource.Id.myDrawer);
+            mLeftDrawer = FindViewById<ListView>(Resource.Id.leftListView);
+
+            mDrawerTogle = new ActionBarDrawerToggle(this, mDrawerLayout, Resource.Drawable.nav_icon, Resource.String.open_drawer, Resource.String.close_drawer);
+            mLeftItems.Add("Home");
+            mLeftItems.Add("UpdatePersonalDetails");
+            mLeftItems.Add("Notification");
+            mLeftItems.Add("Send Money Home");
+            mLeftItems.Add("Target History");
+            mLeftItems.Add("LogOut");
+            ArrayAdapter mLeftAdapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, mLeftItems);
+            mLeftDrawer.Adapter = mLeftAdapter;
+            mLeftDrawer.ItemClick += (sender, e) =>
+            {
+
+                string str = mLeftDrawer.GetItemAtPosition(e.Position).ToString();
+                if (str == "Home")
+                {
+                    Intent intent = new Intent();
+                    intent.SetClass(this, typeof(MainActivity));
+                    StartActivity(intent);
+                }
+                if (str == "UpdatePersonalDetails")
+                {
+                    Intent intent = new Intent();
+                    intent.SetClass(this, typeof(CreateCustomerActivity));
+                    StartActivity(intent);
+                }
+                if (str == "My Target")
+                {
+                    Intent intent = new Intent();
+                    intent.SetClass(this, typeof(CategoryActivity));
+                    StartActivity(intent);
+                }
+                if (str == "Create Account")
+                {
+                    Intent intent = new Intent();
+                    intent.SetClass(this, typeof(CreateAccountActivity));
+                    StartActivity(intent);
+                }
+                if (str == "Notification")
+                {
+                    Intent intent = new Intent();
+                    intent.SetClass(this, typeof(CategoryActivity));
+                    StartActivity(intent);
+                }
+                if (str == "Notification")
+                {
+                    Intent intent = new Intent();
+                    intent.SetClass(this, typeof(CategoryActivity));
+                    StartActivity(intent);
+                }
+
+            };
+
+
+            mDrawerLayout.SetDrawerListener(mDrawerTogle);
+
+            ActionBar.SetDisplayHomeAsUpEnabled(true);
+            ActionBar.SetHomeButtonEnabled(true);
+        }
+
+        protected override void OnPostCreate(Bundle savedInstanceState)
+        {
+            base.OnPostCreate(savedInstanceState);
+            mDrawerTogle.SyncState();
+        }
+
+        public override void OnConfigurationChanged(Configuration newConfig)
+        {
+            base.OnConfigurationChanged(newConfig);
+            mDrawerTogle.OnConfigurationChanged(newConfig);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            if (mDrawerTogle.OnOptionsItemSelected(item))
+            {
+
+                return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
+
     }
 }

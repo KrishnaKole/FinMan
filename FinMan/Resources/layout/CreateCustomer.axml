@@ -1,148 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal">
+<ScrollView xmlns:a="http://schemas.android.com/apk/res/android"
+    a:scrollbars="vertical"
+    a:layout_width ="fill_parent"
+    a:layout_height ="fill_parent">
+  <LinearLayout
+      a:orientation="vertical"
+      a:layout_width="match_parent"
+      a:layout_height="match_parent"
+      a:gravity="center_horizontal"
+        >
     <TextView
-        android:text="Customer Details"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:id="@+id/textView1" />
+        a:text="Customer Details"
+        a:textAppearance="?android:attr/textAppearanceLarge"
+        a:layout_width="200dp"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="25dp"
+        a:id="@+id/textView1" />
     <EditText
-        android:id="@+id/firstNameTextbox"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:hint="First Name" />
+        a:id="@+id/firstNameTextbox"
+        a:layout_width="350dp"
+        a:layout_height="wrap_content"
+        a:textSize="15sp"
+        a:hint="First Name" />
     <EditText
-        android:id="@+id/lastNameTextbox"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:hint="Last Name" />
+        a:id="@+id/lastNameTextbox"
+        a:layout_width="350dp"
+        a:layout_height="wrap_content"
+        a:textSize="15sp"
+        a:hint="Last Name" />
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="400.0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:gravity="center_horizontal">
-        <EditText
-            android:id="@+id/dobTextbox"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:hint="Date of Birth (YYYY-MM-DD)" />
-        <CheckBox
-            android:text="Male"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:scaleX="0.70"
-            android:scaleY="0.70"
-            android:id="@+id/maleCheckbox" />
-        <CheckBox
-            android:text="Female"
-            android:layout_width="85dp"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:scaleX="0.70"
-            android:scaleY="0.70"
-            android:id="@+id/femaleCheckbox" />
+        a:orientation="horizontal"
+        a:minWidth="25px"
+        a:minHeight="25px"
+        a:layout_width="400.0dp"
+        a:layout_height="wrap_content"
+        a:id="@+id/linearLayout1"
+        a:gravity="center_horizontal">
+      <EditText
+          a:id="@+id/dobTextbox"
+          a:layout_width="200dp"
+          a:layout_height="wrap_content"
+          a:textSize="15sp"
+          a:hint="Date of Birth (YYYY-MM-DD)" />
+      <CheckBox
+          a:text="Male"
+          a:layout_width="65dp"
+          a:layout_height="wrap_content"
+          a:textSize="15sp"
+          a:scaleX="0.70"
+          a:scaleY="0.70"
+          a:id="@+id/maleCheckbox" />
+      <CheckBox
+          a:text="Female"
+          a:layout_width="85dp"
+          a:layout_height="wrap_content"
+          a:textSize="15sp"
+          a:scaleX="0.70"
+          a:scaleY="0.70"
+          a:id="@+id/femaleCheckbox" />
     </LinearLayout>
     <EditText
-        android:id="@+id/nationalityTextbox"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:hint="Nationality" />
+        a:id="@+id/nationalityTextbox"
+        a:layout_width="350dp"
+        a:layout_height="wrap_content"
+        a:textSize="15sp"
+        a:hint="Nationality" />
     <EditText
-        android:id="@+id/addressStreetTextbox"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:hint="Address (Street)" />
+        a:id="@+id/addressStreetTextbox"
+        a:layout_width="350dp"
+        a:layout_height="wrap_content"
+        a:textSize="15sp"
+        a:hint="Address (Street)" />
     <EditText
-        android:id="@+id/addressPostalCodeTextbox"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:hint="Address (Postal Code)" />
+        a:id="@+id/addressPostalCodeTextbox"
+        a:layout_width="350dp"
+        a:layout_height="wrap_content"
+        a:textSize="15sp"
+        a:hint="Address (Postal Code)" />
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout2"
-        android:gravity="center_horizontal">
-        <EditText
-            android:id="@+id/cityTextbox"
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:hint="City" />
-        <EditText
-            android:id="@+id/countryTextbox"
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:hint="Country" />
+        a:orientation="horizontal"
+        a:minWidth="25px"
+        a:minHeight="25px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:id="@+id/linearLayout2"
+        a:gravity="center_horizontal">
+      <EditText
+          a:id="@+id/cityTextbox"
+          a:layout_width="175dp"
+          a:layout_height="wrap_content"
+          a:textSize="15sp"
+          a:hint="City" />
+      <EditText
+          a:id="@+id/countryTextbox"
+          a:layout_width="175dp"
+          a:layout_height="wrap_content"
+          a:textSize="15sp"
+          a:hint="Country" />
     </LinearLayout>
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout2"
-        android:gravity="center_horizontal">
-        <EditText
-            android:id="@+id/phoneNumberTextbox"
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:hint="Phone Number" />
-        <EditText
-            android:id="@+id/emailidTextbox"
-            android:layout_width="175dp"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:hint="Email ID" />
+        a:orientation="horizontal"
+        a:minWidth="25px"
+        a:minHeight="25px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:id="@+id/linearLayout2"
+        a:gravity="center_horizontal">
+      <EditText
+          a:id="@+id/phoneNumberTextbox"
+          a:layout_width="175dp"
+          a:layout_height="wrap_content"
+          a:textSize="15sp"
+          a:hint="Phone Number" />
+      <EditText
+          a:id="@+id/emailidTextbox"
+          a:layout_width="175dp"
+          a:layout_height="wrap_content"
+          a:textSize="15sp"
+          a:hint="Email ID" />
     </LinearLayout>
     <EditText
-        android:id="@+id/passportNumberTextbox"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:hint="Passport Number" />
+        a:id="@+id/passportNumberTextbox"
+        a:layout_width="350dp"
+        a:layout_height="wrap_content"
+        a:textSize="15sp"
+        a:hint="Passport Number" />
     <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout3"
-        android:gravity="center_horizontal">
-        <Button
-            android:text="Become a Customer !!"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/createCustomerButton"
-            android:layout_marginTop="15dp"
-            android:scaleX="0.90"
-            android:scaleY="0.90" />
-        <Button
-            android:text="Update Details"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/updateCustomerButton"
-            android:layout_marginTop="15dp"
-            android:scaleX="0.90"
-            android:scaleY="0.90" />
+        a:orientation="horizontal"
+        a:minWidth="25px"
+        a:minHeight="25px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:id="@+id/linearLayout3"
+        a:gravity="center_horizontal">
+      <Button
+          a:text="Become a Customer !!"
+          a:layout_width="200dp"
+          a:layout_height="wrap_content"
+          a:id="@+id/createCustomerButton"
+          a:layout_marginTop="15dp"
+          a:scaleX="0.90"
+          a:scaleY="0.90" />
+      <Button
+          a:text="Update Details"
+          a:layout_width="200dp"
+          a:layout_height="wrap_content"
+          a:id="@+id/updateCustomerButton"
+          a:layout_marginTop="15dp"
+          a:scaleX="0.90"
+          a:scaleY="0.90" />
     </LinearLayout>
-</LinearLayout>
+  </LinearLayout>
+</ScrollView>

@@ -10,12 +10,12 @@ namespace FinMan.Data
     {
         private static Dictionary<Category, List<string>> Keywords =
             new Dictionary<Category, List<string>>() {
-            { Category.Transport, new List<string>{"Ruter","NSB", "Taxi","Oil","Norwegian Air" } },
-            { Category.Food, new List<string>{"Mcdonald","Restaurant", "Restora", "Pizza","Coop", "Bunnpris","kebab","beer"} },
+            { Category.Transport, new List<string>{"Ruter","NSB", "Taxi","Oil","Norwegian Air","Yellow" } },
+            { Category.Food, new List<string>{"Mcdonald","Restaurant", "Restora", "Pizza","Coop", "Bunnpris","kebab","beer","Orange","Blue"} },
             { Category.Home, new List<string>{"Rent","Utleie", "Electricity","Hafslund","Strømberg Gruppen" } },
             { Category.Shopping, new List<string>{"Amazon","aliexpress", "ebay", "Storo Senter", "Steen &" } },
             { Category.Salary, new List<string>{"Salary", "lønn", "tata consultancy"} },
-                {Category.CommunicationEntertainment,new List<string> { "Mycall","Skype","lyca","kino", "Netflix", "Canal", "internet", "Get AS", "TV 2 Gruppen AS","Sats " } },
+                {Category.CommunicationEntertainment,new List<string> { "Mycall","Skype","lyca","kino", "Netflix"} },
             };
         public static Dictionary<Category, Double> CategorizeTransactions(List<Transaction> transactions)
         {
@@ -42,14 +42,14 @@ namespace FinMan.Data
                 }
                 if (!found)
                 {
-                    if (result.ContainsKey(Category.Unknown))
+                    if (result.ContainsKey(Category.Overall))
                     {
-                        result[Category.Unknown] += (transaction.amount * -1);
+                        result[Category.Overall] += (transaction.amount * -1);
 
                     }
                     else
                     {
-                        result[Category.Unknown] =( transaction.amount * -1);
+                        result[Category.Overall] = (transaction.amount * -1);
                     }
                 }
             }
@@ -77,7 +77,7 @@ namespace FinMan.Data
         Shopping,
         CommunicationEntertainment,
         Salary,
-        Unknown
+        Overall
     }
 }
 

@@ -37,7 +37,8 @@ namespace FinMan
             await Task.Delay(5000);
 
             Intent intent = new Intent();
-            intent.SetClass(this, typeof(CategoryActivity));
+            intent.SetClass(this, typeof(LoginActivity));
+            //intent.SetClass(this, typeof(CategoryActivity));
             intent.PutExtra("PersonalNumber", "");
             StartActivity(intent);
         }

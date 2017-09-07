@@ -89,25 +89,7 @@
                 android:id="@+id/dnbTextview"
                 android:layout_gravity="center"
                 android:textSize="20sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:gravity="center_horizontal">
-            <CheckBox
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/dnbCheckbox" />
-            <TextView
-                android:text="Danske Bank"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/dnbTextview"
-                android:layout_gravity="center"
-                android:textSize="20sp" />
-        </LinearLayout>
+        </LinearLayout>        
         <TextView
             android:text="----------------------   Select Your Home Country   ----------------------"
             android:layout_width="match_parent"

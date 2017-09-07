@@ -9,4 +9,10 @@
     <item name="android:startColor">#ff9d9e9d</item>
     <item name="android:endColor">#ff747674</item>
   </style>
+  <style name="FinManTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowBackground">@color/my_lightbrown</item>
+    <item name="android:textColorPrimary">@color/my_lightbrown</item>
+    <item name="android:colorPrimary">@color/my_green</item>
+    <item name="android:colorAccent">@color/my_green</item>
+  </style>
 </resources>

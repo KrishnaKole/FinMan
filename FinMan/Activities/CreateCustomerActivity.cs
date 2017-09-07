@@ -85,8 +85,12 @@ namespace FinMan
             var newCustomer = SetCustomerObject();
             CustomerResponse customerResponse = await customerClient.CreateCustomer(newCustomer);
 
-            //if(!string.IsNullOrEmpty(customerResponse.customerID))
+            // if(!string.IsNullOrEmpty(customerResponse.customerID))
             //redirect to page to create an account
+            Intent intent = new Intent();
+            intent.SetClass(this, typeof(CreateAccountActivity));
+            intent.PutExtra("PersonalNumber", _personalNumber);
+            StartActivity(intent);
         }
 
         private Customer SetCustomerObject()
