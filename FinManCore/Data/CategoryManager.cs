@@ -10,12 +10,12 @@ namespace FinMan.Data
     {
         private static Dictionary<Category, List<string>> Keywords =
             new Dictionary<Category, List<string>>() {
-            { Category.Transport, new List<string>{"Ruter","NSB", "Taxi","Oil" } },
-            { Category.Food, new List<string>{"Mcdonald","Restaurant", "Restora", "Pizza","Coop", "Bunnpris","kebab"} },
-            { Category.Home, new List<string>{"Rent","Utleie", "Electricity","Hafslund","internet","Get AS" } },
-            { Category.Shopping, new List<string>{"Amazon","aliexpress", "ebay", "Storo Senter" } },
+            { Category.Transport, new List<string>{"Ruter","NSB", "Taxi","Oil","Norwegian Air" } },
+            { Category.Food, new List<string>{"Mcdonald","Restaurant", "Restora", "Pizza","Coop", "Bunnpris","kebab","beer"} },
+            { Category.Home, new List<string>{"Rent","Utleie", "Electricity","Hafslund","Strømberg Gruppen" } },
+            { Category.Shopping, new List<string>{"Amazon","aliexpress", "ebay", "Storo Senter", "Steen &" } },
             { Category.Salary, new List<string>{"Salary", "lønn", "tata consultancy"} },
-                {Category.CommunicationEntertainment,new List<string> { "Mycall","Skype","lyca","kino", "Netflix" } },
+                {Category.CommunicationEntertainment,new List<string> { "Mycall","Skype","lyca","kino", "Netflix", "Canal", "internet", "Get AS", "TV 2 Gruppen AS","Sats " } },
             };
         public static Dictionary<Category, Double> CategorizeTransactions(List<Transaction> transactions)
         {
@@ -30,12 +30,12 @@ namespace FinMan.Data
                     {
                         if (result.ContainsKey(key.Key))
                         {
-                            result[key.Key] += transaction.amount;
+                            result[key.Key] += (transaction.amount * -1);
 
                         }
                         else
                         {
-                            result[key.Key] = transaction.amount;
+                            result[key.Key] = (transaction.amount * -1);
                         }
                         break;
                     }
@@ -44,12 +44,12 @@ namespace FinMan.Data
                 {
                     if (result.ContainsKey(Category.Unknown))
                     {
-                        result[Category.Unknown] += transaction.amount;
+                        result[Category.Unknown] += (transaction.amount * -1);
 
                     }
                     else
                     {
-                        result[Category.Unknown] = transaction.amount;
+                        result[Category.Unknown] =( transaction.amount * -1);
                     }
                 }
             }
@@ -75,8 +75,8 @@ namespace FinMan.Data
         Food,
         Home,
         Shopping,
-        Salary,
         CommunicationEntertainment,
+        Salary,
         Unknown
     }
 }

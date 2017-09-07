@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+  <RelativeLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/targetLayout">
+    <TextView
+        android:text="My Target"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myTargetText"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myTargetCategoryText"
+        android:layout_below="@id/myTargetText"
+        android:layout_alignParentLeft="true"
+          android:layout_marginTop="10dp"
+        />
+    <ProgressBar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/targetProgressBar"
+       style="@style/tallerBarStyle"
+       android:layout_below="@id/myTargetCategoryText"
+       android:layout_marginTop="10dp"
+  />
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/targetContentLayout"
+        android:layout_below="@id/targetProgressBar">
+      <TextView
+          android:text=""
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/allowedText"
+          android:layout_alignParentLeft="true" />
+      <TextView
+          android:text=""
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/spentText"
+          android:layout_alignParentRight="true" />
+    </RelativeLayout>
+  </RelativeLayout>
+  <TextView
+         android:text="August 2017"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/monthText"
+         android:layout_centerHorizontal="true" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:id="@+id/categoryLayout">
     <com.nulana.NChart.NChartView
         android:id="@+id/nchart3d"
-        android:layout_height="fill_parent"
-        android:layout_width="fill_parent" />
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+  </LinearLayout>
 </LinearLayout>

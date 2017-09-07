@@ -24,11 +24,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/accountListView"
         android:choiceMode="multipleChoice" />
-  <Button
-       android:id="@+id/goToProfile"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginRight="30dp"
-       android:layout_marginLeft="30dp"
-       android:text="@string/goToProfile" />
+    <Button
+        android:id="@+id/goToProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/goToProfile" />
 </LinearLayout>

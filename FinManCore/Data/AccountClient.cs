@@ -86,8 +86,24 @@ namespace FinMan.Data
             var client = await Utils.GetClient();
             string dateFrom = from.ToString("ddMMyyyy");
             string dateTo = to.ToString("ddMMyyyy");
-            string result = await client.GetStringAsync(Url + $"?accountNumber={account}&customerID={customerId}&dateFrom={dateFrom}&dateTo={dateTo}");
-            return JsonConvert.DeserializeObject<AccountTransaction>(result);
+            string result;
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(Url + $"?accountNumber={account}&customerID={customerId}&dateFrom={dateFrom}&dateTo={dateTo}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    result = await response.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<AccountTransaction>(result);
+                }                
+            }
+            catch (Exception)
+            {
+                return new AccountTransaction();
+            }
+
+            return null;
+            
         }
 
         public async Task<List<Transaction>> GetCustomerAllAccountTransactions(string customerId, DateTime from, DateTime to)
@@ -100,7 +116,10 @@ namespace FinMan.Data
             foreach (var account in accountCustomer.accounts)
             {
                 var details = await GetAccountTransactions(customerId, account.accountNumber.ToString(), from, to);
-                accountTransactions.AddRange(details.transactions.ToList());
+                if (details != null)
+                {
+                    accountTransactions.AddRange(details.transactions.ToList());
+                }
             }
             return accountTransactions;
         }

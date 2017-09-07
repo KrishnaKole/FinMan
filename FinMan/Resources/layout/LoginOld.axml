@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.facebook.login.widget.LoginButton
+        android:layout_height="@dimen/com_facebook_profilepictureview_preset_size_small"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:id="@+id/FacebookButton"
+        android:text="@string/Facebook" />
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/ProfilePic"
+        android:layout_height="@dimen/com_facebook_profilepictureview_preset_size_large"
+        android:layout_width="@dimen/com_facebook_profilepictureview_preset_size_large"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:text="Login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textView12"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/com_facebook_likeboxcountview_caret_width" />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/com_facebook_share_button_compound_drawable_padding"
+        android:layout_height="wrap_content"
+        android:hint="Username" />
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/com_facebook_share_button_compound_drawable_padding"
+        android:layout_height="wrap_content"
+        android:hint="Password" />
+    <TextView
+        android:text="Forgot Password ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:autoLink="web"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:gravity="center_horizontal"
+        android:linksClickable="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:paddingLeft="100dp">
+        <Button
+            android:text="Log In"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/button1"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+        <Button
+            android:text="Sign Up"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/button2"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <GridLayout
+        android:minWidth="10px"
+        android:minHeight="20px"
+        android:layout_width="match_parent"
+        android:id="@+id/gridLayout2"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_marginTop="05dp"
+        android:layout_marginBottom="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/com_facebook_profilepictureview_preset_size_normal"
+        android:layout_marginRight="@dimen/com_facebook_profilepictureview_preset_size_small"
+        android:paddingLeft="30px">
+        <ImageButton
+            android:src="@drawable/twitter_logo"
+            android:id="@+id/imageButton1"
+            android:maxHeight="80dp"
+            android:maxWidth="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <ImageButton
+            android:src="@drawable/googleplus_logo"
+            android:id="@+id/imageButton2"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:maxHeight="80dp"
+            android:maxWidth="80dp"
+            android:scaleType="fitCenter" />
+        <ImageButton
+            android:src="@drawable/facebook_logo"
+            android:id="@+id/imageButton3"
+            android:scaleType="fitCenter"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:adjustViewBounds="true" />
+    </GridLayout>
+</LinearLayout>

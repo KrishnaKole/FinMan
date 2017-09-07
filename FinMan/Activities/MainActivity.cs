@@ -10,7 +10,7 @@ using Android.Content;
 
 namespace FinMan
 {
-    [Activity(Label = "FinMan", /*MainLauncher = true, */Icon = "@mipmap/icon")]
+    [Activity]
     public class MainActivity : Activity
     {
         int count = 1;
@@ -54,6 +54,8 @@ namespace FinMan
 
             listView.Adapter = new AccountAdapter(this, accountItems);
         }
+
+
     }
 }
 

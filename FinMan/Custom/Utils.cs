@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using FinMan.Data;
+using static FinMan.Resource;
 
 namespace FinMan.Custom
 {
@@ -64,5 +65,6 @@ namespace FinMan.Custom
         public static List<string> AccountList { get; set; }
         public static List<Target> TargetList { get; set; }
     }
-    
+
+
 }

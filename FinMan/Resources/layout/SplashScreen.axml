@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:foregroundGravity="center"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#F5EDD5">
+    <ImageView
+        android:src="@drawable/finman_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/finmanImageView"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_marginTop="-100dp" />
+    <TextView
+        android:text="FinMan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finManTextView"
+        android:textColor="#53541F"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="-175dp" />
+</LinearLayout>

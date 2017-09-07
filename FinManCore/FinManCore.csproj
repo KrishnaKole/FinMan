@@ -38,6 +38,8 @@
     <Compile Include="Data\AccountClient.cs" />
     <Compile Include="Data\AccountEntities.cs" />
     <Compile Include="Data\CategoryManager.cs" />
+    <Compile Include="Data\CurrencyClient.cs" />
+    <Compile Include="Data\CurrencyEntity.cs" />
     <Compile Include="Data\CustomerClient.cs" />
     <Compile Include="Data\CustomerEntities.cs" />
     <Compile Include="Data\PaymentClient.cs" />

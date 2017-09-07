@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <EditText
+        android:id="@+id/personalNumberTextbox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="P - Number"
+        android:paddingTop="50dp"
+        android:textSize="15dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="---------------------------   Select Your Bank   ---------------------------"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:paddingTop="40dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="50dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/dnbCheckbox" />
+            <TextView
+                android:text="DNB"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dnbTextview"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+            <TextView
+                android:text="Become DNB Customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newCustomerButton"
+                android:autoLink="all"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal">
+            <CheckBox
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/dnbCheckbox" />
+            <TextView
+                android:text="Nordea"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dnbTextview"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal">
+            <CheckBox
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/dnbCheckbox" />
+            <TextView
+                android:text="SpareBank 1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dnbTextview"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal">
+            <CheckBox
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/dnbCheckbox" />
+            <TextView
+                android:text="Danske Bank"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dnbTextview"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <TextView
+            android:text="----------------------   Select Your Home Country   ----------------------"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:paddingTop="40dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/countrySpinner" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="25dp">
+        <Button
+            android:text="Next"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/nextButton"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace FinMan.Data
 {
 
-    public class CreateCustomerRequest
+    public class Customer
     {
         public string personalNumber { get; set; }
         public string firstName { get; set; }
@@ -42,6 +42,7 @@ namespace FinMan.Data
         public string nationality { get; set; }
         public string phoneNumber { get; set; }
         public string email { get; set; }
+        public string idNumber { get; set; }
         public string idType { get; set; }
         public Address address { get; set; }
     }

@@ -17,8 +17,8 @@ using Xamarin.Facebook.Login.Widget;
 
 namespace FinMan
 {
-    [Activity(Label = "Login", Icon = "@mipmap/icon", MainLauncher = true)]
-    public class LoginActivity : Activity, IFacebookCallback
+    [Activity(Label = "Login", Icon = "@mipmap/icon"/*, MainLauncher = true*/)]
+    public class LoginActivityOld : Activity, IFacebookCallback
     {
         private ICallbackManager mCallbackManager;
         private ProfilePictureView mProfilePic;
